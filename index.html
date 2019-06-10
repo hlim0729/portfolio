@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description' content="Harry Kim's portfolio web site.">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
@@ -10,62 +10,57 @@
     <title>Harry Kim</title>
 </head>
 <body>
-    <div class='nav'>
-        <ul class='nav-list'>
-            <li><a id='name' class='nav-link'>Harry Kim</a></li>
-            <li><a id='project' class='nav-link'>Projects</a></li>
-            <li><a id='contact' class='nav-link nav-link-open'>Contact</a></li>
-        </ul>
-    </div>
-    <div class='main-content'>
-        <p class='bio'>My name is Harry and I am a fullstack <span class='bold'>Web Developer.</span> 
-        I am currently based in Chicago area. I love techologies, soccer, video games, and movies. I am also very into learning new languages
-        which led me to work as a Korean/English bilingual interpreter for a while. I am <span class='bold'>calm</span> so I do not usually panic or get disoriented easily. I also consider myself very <span class='bold'> cooperative</span> with others which causes smooth relationship with coworkers.
-        Please do not hesitate to contact me. I also have some cool projects I worked on here so feel free to check out those also.
-        </p>
+	<header class='nav-bar'>
+		<h1 id='header'>Harry Kim</h1>
+			<button id='bio-button' type='button' class='nav-button' >About</button>
+			<button id='projects-button' type='button' class='nav-button'>Projects</button>
+			<a href='https://github.com/hlim0729' target='_blank'>
+				<button type='button' class='nav-button' >GitHub</button>
+			</a>
+			<a href='https://www.linkedin.com/in/harry-kim-123ab366/' target='_blank'>
+				<button type='button' class='nav-button'>LinkedIn</button>
+			</a>
+	</header>
 
-        <div class='home-links'>
-            <a href="mailto:harryhkim0729@gmail.com"><button id='email-button' type='button'>Email me</button></a>
-            <button id='projects-button' type='button'>View my projects</button>
-        </div>
-    </div>
-    <div id='contact'>
-        <p class='bio'>I have always thought that it is so facinating what the internet is capable of. It can be used to stream movies, play games, interact with people from thousands of miles away. I have started to feel that maybe I should be part of this vast online world and contribute by developing some cool software. Now, although I have a long way to go, I am a web devloper and very proud of it.</p>
-        <p class='bio'> Currently, I am actively looking for work. It would be amazing if you contact me using one of the following links:</p>
-    <ul class="social">
-        <li><a class="social-links" href="https://github.com/hlim0729" target="_blank">Github</a></li>
-        <li><a class="social-links" href="https://www.linkedin.com/in/harry-kim-123ab366/" target="_blank">LinkedIn</a></li>
-        <li><a class="social-links" href="mailto:harryhkim0729@gmail.com" target='_blank'>E-mail</a></li>
-      </ul>
-    </div>
-    <div class='projects'>
-        <div class='project'>
-            <div class='img-container'>
-                <a href="https://hlim0729.github.io/" target='_blank'><img src="images/quiz-app-pic.jpg" alt="quiz app screenshot"></img></a>
-            </div>
-        <div class='project-about'>
-            <h3>FC Barcelona Quiz App</h3>
-            <p class='project-explain'>This is the quiz to test the knoledge about Football Club Barcelona. You get to see your scores and which question you are at. You also see the fun gif files when you get the question right and wrong.</p>
-            <div class='tech-lists'>
-            HTML, CSS, JavaScript, jQuery
-            </div>
-            <div class='project-footer'>
-                <div class='project-links'>
-                        <a href="https://github.com/hlim0729/hlim0729.github.io" target="_blank">
-                        <button type="button">View code</button>
-                      </a>
-                      <a href="https://hlim0729.github.io/" target="_blank">
-                        <button type="button" >View project</button>
-                      </a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <footer>
-        <p>Harry Kim 2019</p>
-    </footer>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="index.js"></script>
+	<main>
+		<section id='bio'>
+			<h2>About</h2>
+			<div class='about-me'>
+				<p class='bio'>My name is Harry and I am a fullstack <span class='bold'>Web Developer.</span> 
+                    I am currently based in Chicago area, but would love to relocate also. I love techologies, soccer, video games, and movies. I am also very into learning new languages
+                    which led me to work as a Korean/English bilingual interpreter for a while. I am <span class='bold'>calm</span> so I do not usually panic or get disoriented easily even when I face tough assignments. I also consider myself very <span class='bold'> cooperative</span> with others which causes smooth relationship with coworkers.
+                    Please do not hesitate to contact me. I also have some cool projects I worked on here so feel free to check out those also.
+                    </p>
+				<p> Currently, I am actively looking for work.
+					Feel free to contact me via email at
+					<a href='mailto:harryhkim0729@gmail.com'>
+						harryhkim0729@gmail.com
+					</a>
+				</p>
+			</div>
+		</section>
+
+		<section id='projects'>
+			<h2>Projects</h2>
+			<div id='project-1'>
+				<h3>FC Barcelona Quiz App</h3>
+				<p>This is the quiz to test the knoledge about Football Club Barcelona. You get to see your scores and which question you are at. You also see the fun gif files when you get the question right and wrong.</p>
+                <p>HTML5 || CSS || JavaScript || jQuery ||</p>
+				<img src="images/quiz-app-pic.jpg" alt="quiz app screenshot"></img><br>
+				<section  class='project-links'>
+					<a href="https://github.com/hlim0729/hlim0729.github.io" target='_blank'>
+						<button type='button'>View Code</button>
+					</a>
+					<a href="https:///hlim0729.github.io/" target='_blank'>
+						<button type='button'>View Project</button>
+					</a>
+				</section>
+			</div>							
+		</section>
+	</main>
+
+	<footer>© Harry Kim 2019</footer>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
+
